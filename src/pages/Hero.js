@@ -1,3 +1,7 @@
+// Import assets from src/assets
+import picture from '../assets/picture.jpg';
+import resume from '../assets/resume-pau.pdf';
+
 export default function Hero() {
   return `
     <section id="home" class="bg-black pt-16">
@@ -6,7 +10,7 @@ export default function Hero() {
         <!-- Image -->
         <div class="flex-shrink-0">
           <img 
-            src="/src/assets/picture.jpg" 
+            src="${picture}" 
             alt="Paulo"
             class="w-36 h-36 sm:w-40 sm:h-40 object-cover rounded-xl shadow-lg"
           />
@@ -37,8 +41,8 @@ export default function Hero() {
           <!-- Buttons -->
           <div class="mt-2 flex flex-col sm:flex-row gap-2">
 
-            <!-- Updated PDF Link -->
-            <a href="/src/assets/resume-pau.pdf" target="_blank"
+            <!-- Resume Link -->
+            <a href="${resume}" target="_blank"
               class="flex items-center gap-1 justify-center bg-[#9E2A3A] text-white px-4 py-1 sm:px-5 sm:py-2 rounded-lg text-sm sm:text-base font-medium hover:opacity-90 transition"
               style="box-shadow: 0 0 10px #9E2A3A, 0 0 20px #9E2A3A;">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -53,5 +57,5 @@ export default function Hero() {
 
       </div>
     </section>
-  `
+  `;
 }

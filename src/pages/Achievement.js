@@ -1,3 +1,6 @@
+// Import the PNP logo image
+import pnpLogo from '../assets/pnp.png';
+
 export default function Achievement() {
   return `
     <section id="achievement" class="relative bg-black py-24 px-8 flex justify-center items-center overflow-hidden">
@@ -50,7 +53,7 @@ export default function Achievement() {
           <div class="achievement-card p-8 rounded-lg transition-transform hover:scale-105 relative flex flex-col gap-4 items-start overflow-hidden group">
             
             <img 
-              src="/src/assets/pnp.png" 
+              src="${pnpLogo}" 
               alt="PNP Logo Background"
               class="absolute inset-0 w-full h-full object-contain opacity-10 grayscale group-hover:opacity-20 transition-opacity pointer-events-none p-4"
             />
@@ -100,7 +103,6 @@ export default function Achievement() {
           font-weight: 600;
         }
 
-        /* Neon red top & bottom borders */
         .neon-border {
           position: relative;
           border-top: 2px solid #9E2A3A;
